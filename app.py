@@ -4,9 +4,7 @@ import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 
-# -----------------------------
-# LOAD DATA
-# -----------------------------
+
 @st.cache_data
 def load_data():
     df = pd.read_excel("District5_Food_List.xlsx")
@@ -14,9 +12,7 @@ def load_data():
 
 df = load_data()
 
-# -----------------------------
-# LOAD TRANSFORMER MODEL
-# -----------------------------
+
 @st.cache_resource
 def load_model():
     model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")  
@@ -24,9 +20,7 @@ def load_model():
 
 model = load_model()
 
-# -----------------------------
-# BUILD FAISS INDEX
-# -----------------------------
+
 @st.cache_resource
 def build_faiss_index(descriptions):
     embeddings = model.encode(descriptions, convert_to_numpy=True, show_progress_bar=True)
@@ -39,9 +33,9 @@ index, embeddings = build_faiss_index(df["Description"].tolist())
 # -----------------------------
 # STREAMLIT UI
 # -----------------------------
-st.title("🍜 District 5 Food Recommendation (Transformer + FAISS)")
-st.write("Type what kind of food you're craving — we’ll find the best match in Quận 5, TP.HCM!")
-
+st.title("🍜 District 5 Food Recommendation")
+st.write("Type what kind of food you're craving")
+st.write("When you get what you want, you can search it online for more info")
 query = st.text_input("Describe your craving (e.g., 'sweet dessert', 'spicy soup', 'crispy snack')")
 
 if query:
