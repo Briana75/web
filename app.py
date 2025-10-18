@@ -76,6 +76,5 @@ if query:
 
 else:
     st.info("👆 Type in a craving above to get personalized recommendations.")
-dishname = df["name_vn"]
-st.write(dishname)
+
 
