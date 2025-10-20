@@ -4,17 +4,13 @@ import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 
-# -----------------------------
-# PAGE CONFIG
-# -----------------------------
+
 st.set_page_config(page_title="🍜 District 5 Food Recommender", page_icon="🍲", layout="wide")
 
 st.title("🍜 District 5 Food Recommender")
-st.caption("Find your perfect dish in Chợ Lớn, Hồ Chí Minh City — powered by AI & FAISS")
+st.caption("Find your perfect dish in Chợ Lớn, Hồ Chí Minh City")
 
-# -----------------------------
-# LOAD DATA
-# -----------------------------
+
 @st.cache_data
 def load_data():
     df = pd.read_csv("district5_dishes_dishlist.csv")
@@ -22,9 +18,7 @@ def load_data():
 
 df = load_data()
 
-# -----------------------------
-# LOAD MODEL
-# -----------------------------
+
 @st.cache_resource
 def load_model():
     model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
@@ -32,9 +26,7 @@ def load_model():
 
 model = load_model()
 
-# -----------------------------
-# LOAD EMBEDDINGS + BUILD INDEX
-# -----------------------------
+
 @st.cache_resource
 def load_embeddings():
     embeddings = np.load("dish_embeddings.npy")
