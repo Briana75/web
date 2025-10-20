@@ -39,7 +39,7 @@ index, embeddings = load_embeddings()
 
 
 query = st.text_input("🍽 What are you craving?", placeholder="e.g. spicy noodle soup, sweet dessert, crispy snack...")
-top_k = 5
+top_k = 3
 
 
 if query:
