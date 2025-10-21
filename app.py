@@ -13,7 +13,7 @@ st.caption("Find your perfect dish in Chợ Lớn, Hồ Chí Minh City")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("district5_dishes_dishlist.csv")
+    df = pd.read_csv("datafood.csv")
     return df
 
 df = load_data()
@@ -29,7 +29,7 @@ model = load_model()
 
 @st.cache_resource
 def load_embeddings():
-    embeddings = np.load("dish_embeddings.npy")
+    embeddings = np.load("dish_embeddings2.npy")
     dim = embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)
     index.add(embeddings)
@@ -39,7 +39,8 @@ index, embeddings = load_embeddings()
 
 
 query = st.text_input("🍽 What are you craving?", placeholder="e.g. spicy noodle soup, sweet dessert, crispy snack...")
-top_k = 3
+top_k = 5
+
 
 
 if query:
