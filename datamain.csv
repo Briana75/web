@@ -1,4 +1,4 @@
-id,name_vn,name_en,description_en,taste_profile,min_ingredients
+,name_vn,name_en,description_en,taste_profile,min_ingredients
 1,Hủ tiếu,Hủ tiếu (Rice Noodle Soup),"Clear, savory broth with chewy rice noodles, pork, shrimp or seafood; often garnished with herbs and fried shallots.","Umami, savory, slightly sweet","rice noodles, pork bones, shrimp, garlic, fish sauce, scallion"
 2,Mì hoành thánh,Wonton Noodle Soup,Egg noodles in a light pork-shrimp broth with wontons (pork/shrimp dumplings) and leafy greens.,"Savory, light, slightly fatty","egg noodles, pork, shrimp, wonton wrappers, pork broth"
 3,Bánh mì,Vietnamese Baguette Sandwich,"Crispy baguette filled with meats (pâté, cold cuts), pickled vegetables, cilantro and chili — crunchy and fresh.","Savory, tangy, crunchy","baguette, pâté, pork/ham, pickled carrot, cucumber, cilantro"
@@ -33,7 +33,7 @@ id,name_vn,name_en,description_en,taste_profile,min_ingredients
 32,Bánh bao chiên,Fried Steamed Bun,Pan-fried or deep-fried buns with savory fillings — crispy exterior with soft interior.,"Savory, crispy","flour, pork filling, oil"
 33,Mì xíu mại,Meatball Noodle Soup,"Noodles served with pork meatballs in a clear, light broth; comforting and gentle in flavor.","Savory, light","noodles, pork meatballs, pork broth, fish sauce"
 34,Bánh canh,Thick Tapioca/Rice Noodle Soup,"Thick, chewy noodles in a rich broth often with crab, pork or fish cake — hearty and filling.","Savory, umami","thick noodles, pork or seafood, broth, fish sauce"
-35,Hủ tiếu Nam Vang,Phnom Penh-style Rice Noodle Soup,"Cambodian-influenced rice noodle with pork, shrimp, quail egg and a clear savory broth.","Savory, slightly sweet","rice noodles, pork, shrimp, quail egg, fish sauce"
+35,Hủ tiếu Nam Vang,Phnom Penh-style Rice Noodle Soup,"Cambodian-influenced rice noodle soup with pork, shrimp, quail egg and a clear savory broth.","Savory, slightly sweet","rice noodles, pork, shrimp, quail egg, fish sauce"
 36,Nước mía,Sugarcane Juice,"A refreshing Vietnamese drink made from fresh sugarcane juice, sweet and perfect for hot days.",Sweet,"sugarcane, sugar"
 37,Hủ tiếu xào,Stir-fried Rice Noodles,"Chinese-style stir-fried noodles with beef, squid, pork, or shrimp","Savory, umami","rice noodles, pork, beef, shrimp, soy sauce"
 38,Cơm chiên Dương Châu,YangZhou Fried Rice,"A famous Chinese-style fried rice made with shrimp, Chinese sausage, eggs, peas, and carrots, all stir-fried with fragrant rice.",Umami,"rice, spring onion, soy sauce, egg"
@@ -41,3 +41,6 @@ id,name_vn,name_en,description_en,taste_profile,min_ingredients
 40,Trà cúc,Chrysanthemum Tea,"A light, floral, and herbal tea made mainly from dried chrysanthemum flowers.","naturally sweet, floral, and refreshing","dried chrysanthemum flowers, water"
 41,Gà tiềm thuốc bắc,Herbal Chicken Soup,"Rich, savory soup made with chicken and Chinese herbs like goji berries and red dates.","Rich, slightly sweet, and herbal","chicken, Chinese herbs, ginger, garlic"
 42,Canh chua cá,Vietnamese Sour Fish Soup,"Tangy and sweet soup cooked with fish, tamarind, pineapple, and tomatoes.","Tangy, sweet, and savory","fish, tamarind, pineapple, tomato"
+43,Trà sữa,Milk Tea,"Sweet drink made by combining brewed tea and milk, served with different kinds of toppings",Sweet,"milk, tea, sugar, toppings of choice"
+44,Chè Sâm Bổ Lượng,Sweet Herbal Soup,"A traditional dessert made from a mix of healthy and refreshing ingredients, these ingredients are simmered in a lightly sweet herbal syrup, creating a cooling and nourishing dessert that is both delicious and good for the body. It can be served chilled or warm, especially popular in hot weather","Sweet, light, refreshing","lotus seeds, longans, red jujubes, barley, seaweed, sugar syrup."
+45,Chè Khúc Bạch,Almond Panna Cotta Dessert Soup,"A popular cold dessert made with soft, jelly-like cubes of almond-flavored panna cotta (or milk pudding)","Sweet, creamy","milk, sugar, roasted almond slices"
