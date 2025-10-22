@@ -13,7 +13,7 @@ st.caption("Find your perfect dish in Chợ Lớn, Hồ Chí Minh City")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("datafood.csv")
+    df = pd.read_csv("datamain.csv")
     return df
 
 df = load_data()
@@ -29,7 +29,7 @@ model = load_model()
 
 @st.cache_resource
 def load_embeddings():
-    embeddings = np.load("dish_embeddings2.npy")
+    embeddings = np.load("dish_embeddings4.npy")
     dim = embeddings.shape[1]
     index = faiss.IndexFlatIP(dim)
     index.add(embeddings)
@@ -53,12 +53,12 @@ if query:
 
     st.subheader("🥢 Recommended Dishes:")
     for rank, idx in enumerate(I[0]):
-        dish = df.iloc[idx]
+        score = D[0][rank] * 100
+        dish = df.iloc[idx] 
         st.markdown(f"### {rank+1}. {dish['name_vn']} / {dish['name_en']}")
         st.markdown(f"**Taste Profile:** {dish['taste_profile']}")
         st.markdown(f"**Description:** {dish['description_en']}")
         st.markdown(f"**Main Ingredients:** {dish['min_ingredients']}")
-        score = D[0][rank] * 100
         color = "green" 
         st.markdown(
                 f"<b>This dish matches your description by "
